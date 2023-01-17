@@ -135,3 +135,14 @@ INSERT INTO `pizzeria`.`repartidor` (`repartidor_id`, `nom`, `data_hora`) VALUES
 INSERT INTO `pizzeria`.`repartidor` (`repartidor_id`, `nom`, `data_hora`) VALUES (2, 'Juan Plaza ', '2023-01-14 11:32:13');
 INSERT INTO `pizzeria`.`repartidor` (`repartidor_id`, `nom`, `data_hora`) VALUES (3, ' Modesto Fernandez ', '2023-01-15 11:32:13');
 INSERT INTO `pizzeria`.`repartidor` (`repartidor_id`, `nom`, `data_hora`) VALUES (4, ' Zohra da Silva ', '2023-01-13 11:32:13');
+
+INSERT INTO `pizzeria`.`pizza` (`pizza_id`, `nom`) VALUES (1, 'Margarita');
+INSERT INTO `pizzeria`.`pizza` (`pizza_id`, `nom`) VALUES (2, 'Napolitana');
+INSERT INTO `pizzeria`.`pizza` (`pizza_id`, `nom`) VALUES (3, 'Marinara ');
+INSERT INTO `pizzeria`.`pizza` (`pizza_id`, `nom`) VALUES (4, 'Sfincione');
+INSERT INTO `pizzeria`.`pizza` (`pizza_id`, `nom`) VALUES (5, 'Fugazza');
+INSERT INTO `pizzeria`.`pizza` (`pizza_id`, `nom`) VALUES (6, 'Chicago');
+INSERT INTO `pizzeria`.`pizza` (`pizza_id`, `nom`) VALUES (7, 'New York');
+INSERT INTO `pizzeria`.`pizza` (`pizza_id`, `nom`) VALUES (8, 'Flammkuchen');
+INSERT INTO `pizzeria`.`pizza` (`pizza_id`, `nom`) VALUES (9, 'Cuatro Quesos ');
+INSERT INTO `pizzeria`.`pizza` (`pizza_id`, `nom`) VALUES (10, 'Cuatro Estaciones ');
