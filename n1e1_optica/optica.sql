@@ -1,27 +1,27 @@
 CREATE SCHEMA IF NOT EXISTS `optica` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 CREATE TABLE IF NOT EXISTS `optica`.`proveidor` (
-  `proveidor_id` INT NOT NULL COMMENT '',
-  `nom` VARCHAR(45) NULL COMMENT '',
-  `carrer` VARCHAR(15) NULL COMMENT '',
-  `numero` VARCHAR(15) NULL COMMENT '',
-  `pis` VARCHAR(15) NULL COMMENT '',
-  `porta` VARCHAR(45) NULL COMMENT '',
-  `ciutat` VARCHAR(45) NULL COMMENT '',
-  `codi_postal` VARCHAR(15) NULL COMMENT '',
-  `pais` VARCHAR(45) NULL COMMENT '',
-  `telefon` VARCHAR(45) NULL COMMENT '',
-  `fax` VARCHAR(45) NULL COMMENT '',
-  `nif` VARCHAR(45) NULL COMMENT '',
-  PRIMARY KEY (`proveidor_id`)  COMMENT '')
+  `proveidor_id` INT NOT NULL,
+  `nom` VARCHAR(45) NULL,
+  `carrer` VARCHAR(15) NULL,
+  `numero` VARCHAR(15) NULL,
+  `pis` VARCHAR(15) NULL,
+  `porta` VARCHAR(45) NULL,
+  `ciutat` VARCHAR(45) NULL,
+  `codi_postal` VARCHAR(15) NULL,
+  `pais` VARCHAR(45) NULL,
+  `telefon` VARCHAR(45) NULL,
+  `fax` VARCHAR(45) NULL,
+  `nif` VARCHAR(45) NULL,
+  PRIMARY KEY (`proveidor_id`))
 ENGINE = InnoDB;
 
 CREATE TABLE IF NOT EXISTS `optica`.`marca` (
-  `marca_id` INT NOT NULL COMMENT '',
-  `nom` VARCHAR(45) NULL COMMENT '',
-  `proveidor_id` INT NULL COMMENT '',
-  PRIMARY KEY (`marca_id`)  COMMENT '',
-  INDEX `proveidor_id_idx` (`proveidor_id` ASC)  COMMENT '',
+  `marca_id` INT NOT NULL,
+  `nom` VARCHAR(45) NULL,
+  `proveidor_id` INT NULL,
+  PRIMARY KEY (`marca_id`),
+  INDEX `proveidor_id_idx` (`proveidor_id` ASC),
   CONSTRAINT `proveidor_id`
     FOREIGN KEY (`proveidor_id`)
     REFERENCES `optica`.`proveidor` (`proveidor_id`)
@@ -30,45 +30,45 @@ CREATE TABLE IF NOT EXISTS `optica`.`marca` (
 ENGINE = InnoDB;
 
 CREATE TABLE IF NOT EXISTS `optica`.`client` (
-  `client_id` INT NOT NULL COMMENT '',
-  `nom` VARCHAR(45) NULL COMMENT '',
-  `carrer` VARCHAR(15) NULL COMMENT '',
-  `numero` VARCHAR(15) NULL COMMENT '',
-  `pis` VARCHAR(45) NULL COMMENT '',
-  `porta` VARCHAR(45) NULL COMMENT '',
-  `codi_postal` VARCHAR(15) NULL COMMENT '',
-  `pais` VARCHAR(45) NULL COMMENT '',
-  `telefono` VARCHAR(45) NULL COMMENT '',
-  `email` VARCHAR(200) NULL COMMENT '',
-  `data_registre` DATETIME NULL COMMENT '',
-  `client_recomanat_id` INT NULL COMMENT '',
-  PRIMARY KEY (`client_id`)  COMMENT '')
+  `client_id` INT NOT NULL,
+  `nom` VARCHAR(45) NULL,
+  `carrer` VARCHAR(15) NULL,
+  `numero` VARCHAR(15) NULL,
+  `pis` VARCHAR(45) NULL,
+  `porta` VARCHAR(45) NULL,
+  `codi_postal` VARCHAR(15) NULL,
+  `pais` VARCHAR(45) NULL,
+  `telefono` VARCHAR(45) NULL,
+  `email` VARCHAR(200) NULL,
+  `data_registre` DATETIME NULL,
+  `client_recomanat_id` INT NULL,
+  PRIMARY KEY (`client_id`))
 ENGINE = InnoDB;
 
 CREATE TABLE IF NOT EXISTS `optica`.`empleat` (
-  `empleat_id` INT NOT NULL COMMENT '',
-  `nom` VARCHAR(45) NULL COMMENT '',
-  `email` VARCHAR(200) NULL COMMENT '',
-  `data_registre` DATETIME NULL COMMENT '',
-  PRIMARY KEY (`empleat_id`)  COMMENT '')
+  `empleat_id` INT NOT NULL,
+  `nom` VARCHAR(45) NULL,
+  `email` VARCHAR(200) NULL,
+  `data_registre` DATETIME NULL,
+  PRIMARY KEY (`empleat_id`))
 ENGINE = InnoDB;
 
 CREATE TABLE IF NOT EXISTS `optica`.`ulleres` (
-  `ulleres_id` INT NOT NULL COMMENT '',
-  `marca_id` INT NULL COMMENT '',
-  `graduacio_l` DECIMAL(3,2) NULL COMMENT '',
-  `graduacio_r` DECIMAL(3,2) NULL COMMENT '',
-  `muntura` SET('flotant', 'pasta', 'metalica') NULL COMMENT '',
-  `muntura_color` VARCHAR(45) NULL COMMENT '',
-  `vidre_color_l` VARCHAR(45) NULL COMMENT '',
-  `vidre_color_r` VARCHAR(45) NULL COMMENT '',
-  `preu` FLOAT NULL COMMENT '',
-  `client_id` INT NULL COMMENT '',
-  `empleat_id` INT NULL COMMENT '',
-  PRIMARY KEY (`ulleres_id`)  COMMENT '',
-  INDEX `marca_id_idx` (`marca_id` ASC)  COMMENT '',
-  INDEX `client_id_idx` (`client_id` ASC)  COMMENT '',
-  INDEX `empleat_id_idx` (`empleat_id` ASC)  COMMENT '',
+  `ulleres_id` INT NOT NULL,
+  `marca_id` INT NULL,
+  `graduacio_l` DECIMAL(3,2) NULL,
+  `graduacio_r` DECIMAL(3,2) NULL,
+  `muntura` SET('flotant', 'pasta', 'metalica') NULL,
+  `muntura_color` VARCHAR(45) NULL,
+  `vidre_color_l` VARCHAR(45) NULL,
+  `vidre_color_r` VARCHAR(45) NULL,
+  `preu` FLOAT NULL,
+  `client_id` INT NULL,
+  `empleat_id` INT NULL,
+  PRIMARY KEY (`ulleres_id`),
+  INDEX `marca_id_idx` (`marca_id` ASC),
+  INDEX `client_id_idx` (`client_id` ASC),
+  INDEX `empleat_id_idx` (`empleat_id` ASC),
   CONSTRAINT `marca_id`
     FOREIGN KEY (`marca_id`)
     REFERENCES `optica`.`marca` (`marca_id`)
