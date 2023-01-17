@@ -105,5 +105,11 @@ INSERT INTO `optica`.`proveidor` (`proveidor_id`, `nom`, `carrer`, `numero`, `pi
 INSERT INTO `optica`.`proveidor` (`proveidor_id`, `nom`, `carrer`, `numero`, `pis`, `porta`, `ciutat`, `codi_postal`, `pais`, `telefon`, `fax`, `nif`) VALUES (5, 'MarOla Export', 'Azaleas', '247', '3', '1', 'Asturias', '33203', 'Espanya', '654332299', '654332299', 'T1234567Z');
 
 
+INSERT INTO `optica`.`empleat` (`empleat_id`, `nom`, `email`, `data_registre`) VALUES (1, 'Marta Sanchez', 'm.sanchez@gmail.com', '2023-01-18 12:00:00');
+INSERT INTO `optica`.`empleat` (`empleat_id`, `nom`, `email`, `data_registre`) VALUES (2, 'Fran Perez', 'f.perez@hotmail.com', '2023-01-02 18:16:02');
+INSERT INTO `optica`.`empleat` (`empleat_id`, `nom`, `email`, `data_registre`) VALUES (3, 'Aina Marti', 'a.marti@hotmail.com', '2023-01-08 10:17:02');
+INSERT INTO `optica`.`empleat` (`empleat_id`, `nom`, `email`, `data_registre`) VALUES (4, 'Nuria Prades', 'n.prades@gmail.com', '2023-01-06 12:17:02');
+INSERT INTO `optica`.`empleat` (`empleat_id`, `nom`, `email`, `data_registre`) VALUES (5, 'Sergi Pamies', 's.pamies@hotmail.com', '2023-01-09 13:17:02');
+INSERT INTO `optica`.`empleat` (`empleat_id`, `nom`, `email`, `data_registre`) VALUES (6, 'Olga Fuentes', 'o.fuentes@gmail.com', '2023-01-15 11:17:02');
 
 
