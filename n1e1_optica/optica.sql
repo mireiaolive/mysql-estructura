@@ -124,3 +124,7 @@ INSERT INTO `optica`.`ulleres` (`ulleres_id`, `marca_id`, `graduacio_l`, `gradua
 INSERT INTO `optica`.`ulleres` (`ulleres_id`, `marca_id`, `graduacio_l`, `graduacio_r`, `muntura`, `muntura_color`, `vidre_color_l`, `vidre_color_r`, `preu`, `client_id`, `empleat_id`) VALUES (4, 3, 1.25, 3, 'pasta', 'marron', 'transparente', 'transparente', 200, 4, 1);
 INSERT INTO `optica`.`ulleres` (`ulleres_id`, `marca_id`, `graduacio_l`, `graduacio_r`, `muntura`, `muntura_color`, `vidre_color_l`, `vidre_color_r`, `preu`, `client_id`, `empleat_id`) VALUES (5, 2, 2, 1, 'pasta', 'amarilla', 'transparente', 'transparente', 250, 5, 1);
 
+-- Llista el total de compres d’un client/a. --
+SELECT * FROM `optica`.`ulleres` WHERE `client_id` = 1 ORDER BY `ulleres_id` LIMIT 300 OFFSET 0;
+
+
