@@ -130,3 +130,8 @@ INSERT INTO `pizzeria`.`empleat` (`empleat_id`, `nom`, `cognoms`, `botiga_id`, `
 INSERT INTO `pizzeria`.`empleat` (`empleat_id`, `nom`, `cognoms`, `botiga_id`, `telefon`, `repartidor_id`) VALUES (8, 'Georgina', 'Guerra', 3, '677554455', 4);
 INSERT INTO `pizzeria`.`empleat` (`empleat_id`, `nom`, `cognoms`, `botiga_id`, `telefon`, `repartidor_id`) VALUES (9, 'Delfina ', 'Herrera', 2, '655667788', 1);
 INSERT INTO `pizzeria`.`empleat` (`empleat_id`, `nom`, `cognoms`, `botiga_id`, `telefon`, `repartidor_id`) VALUES (10, ' Lola ', 'Dueñas ', 5, '657900000', 2);
+
+INSERT INTO `pizzeria`.`repartidor` (`repartidor_id`, `nom`, `data_hora`) VALUES (1, 'Flora Gordo', '2023-01-12 11:32:13');
+INSERT INTO `pizzeria`.`repartidor` (`repartidor_id`, `nom`, `data_hora`) VALUES (2, 'Juan Plaza ', '2023-01-14 11:32:13');
+INSERT INTO `pizzeria`.`repartidor` (`repartidor_id`, `nom`, `data_hora`) VALUES (3, ' Modesto Fernandez ', '2023-01-15 11:32:13');
+INSERT INTO `pizzeria`.`repartidor` (`repartidor_id`, `nom`, `data_hora`) VALUES (4, ' Zohra da Silva ', '2023-01-13 11:32:13');
