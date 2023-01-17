@@ -98,6 +98,11 @@ INSERT INTO `optica`.`client` (`client_id`, `nom`, `carrer`, `numero`, `pis`, `p
 INSERT INTO `optica`.`client` (`client_id`, `nom`, `carrer`, `numero`, `pis`, `porta`, `codi_postal`, `pais`, `telefono`, `email`, `data_registre`) VALUES (10, 'Montse Garriga', 'Sagunt', '33', '1', '3', '08980', 'Espanya', '936662345', 'm.garriga@gmail.com', '2023-01-08 11:17:02');
 
 
+INSERT INTO `optica`.`proveidor` (`proveidor_id`, `nom`, `carrer`, `numero`, `pis`, `porta`, `ciutat`, `codi_postal`, `pais`, `telefon`, `fax`, `nif`) VALUES (1, 'Alco Distribuciones', 'Pocomaco', '14', '1', '1', 'A Coruña', '15190', 'Espanya', '981131600', '981283279', 'Y1234567Z');
+INSERT INTO `optica`.`proveidor` (`proveidor_id`, `nom`, `carrer`, `numero`, `pis`, `porta`, `ciutat`, `codi_postal`, `pais`, `telefon`, `fax`, `nif`) VALUES (2, 'Bauba Style', 'Lloret de mar', '33', '1', '1', 'Girona', '17310', 'Espanya', '670058259', '670058259', 'N1234567Z');
+INSERT INTO `optica`.`proveidor` (`proveidor_id`, `nom`, `carrer`, `numero`, `pis`, `porta`, `ciutat`, `codi_postal`, `pais`, `telefon`, `fax`, `nif`) VALUES (3, 'Prosun', 'Pallars ', '73', '1', '1', 'Barcelona', '08018', 'España', '644058259', '644058290', 'U1234567P');
+INSERT INTO `optica`.`proveidor` (`proveidor_id`, `nom`, `carrer`, `numero`, `pis`, `porta`, `ciutat`, `codi_postal`, `pais`, `telefon`, `fax`, `nif`) VALUES (4, 'Next Round', 'Guixeres', '4', '1', '1', 'Badalona', '08915', 'España', '688974433', '688974433', 'P1234567P');
+INSERT INTO `optica`.`proveidor` (`proveidor_id`, `nom`, `carrer`, `numero`, `pis`, `porta`, `ciutat`, `codi_postal`, `pais`, `telefon`, `fax`, `nif`) VALUES (5, 'MarOla Export', 'Azaleas', '247', '3', '1', 'Asturias', '33203', 'Espanya', '654332299', '654332299', 'T1234567Z');
 
 
 
