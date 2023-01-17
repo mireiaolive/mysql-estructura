@@ -112,3 +112,21 @@ INSERT INTO `pizzeria`.`comanda` (`comanda_id`, `data_hora`, `delivery`, `quanti
 INSERT INTO `pizzeria`.`comanda` (`comanda_id`, `data_hora`, `delivery`, `quantitat`, `preu`, `repartidor_id`, `client_id`) VALUES (5, '2021-10-23 11:48:13', 'domicili', 2, 20, 3, 5);
 INSERT INTO `pizzeria`.`comanda` (`comanda_id`, `data_hora`, `delivery`, `quantitat`, `preu`, `repartidor_id`, `client_id`) VALUES (6, '2021-10-23 11:48:13', 'domicili', 3, 30, 3, 6);
 INSERT INTO `pizzeria`.`comanda` (`comanda_id`, `data_hora`, `delivery`, `quantitat`, `preu`, `repartidor_id`, `client_id`) VALUES (7, '2021-10-23 11:48:13', 'botiga', 3, 30, 4, 7);
+
+INSERT INTO `pizzeria`.`comanda` (`comanda_id`, `data_hora`, `delivery`, `quantitat`, `preu`, `repartidor_id`, `client_id`) VALUES (1, '2021-10-23 11:48:13', 'botiga', 1, 10, 1, 1);
+INSERT INTO `pizzeria`.`comanda` (`comanda_id`, `data_hora`, `delivery`, `quantitat`, `preu`, `repartidor_id`, `client_id`) VALUES (2, '2021-10-23 11:48:13', 'botiga', 2, 20, 1, 2);
+INSERT INTO `pizzeria`.`comanda` (`comanda_id`, `data_hora`, `delivery`, `quantitat`, `preu`, `repartidor_id`, `client_id`) VALUES (3, '2021-10-23 11:48:13', 'botiga', 3, 30, 3, 3);
+INSERT INTO `pizzeria`.`comanda` (`comanda_id`, `data_hora`, `delivery`, `quantitat`, `preu`, `repartidor_id`, `client_id`) VALUES (4, '2021-10-23 11:48:13', 'domicili', 1, 10, 3, 4);
+INSERT INTO `pizzeria`.`comanda` (`comanda_id`, `data_hora`, `delivery`, `quantitat`, `preu`, `repartidor_id`, `client_id`) VALUES (5, '2021-10-23 11:48:13', 'domicili', 2, 20, 3, 5);
+INSERT INTO `pizzeria`.`comanda` (`comanda_id`, `data_hora`, `delivery`, `quantitat`, `preu`, `repartidor_id`, `client_id`) VALUES (6, '2021-10-23 11:48:13', 'domicili', 3, 30, 3, 6);
+INSERT INTO `pizzeria`.`comanda` (`comanda_id`, `data_hora`, `delivery`, `quantitat`, `preu`, `repartidor_id`, `client_id`) VALUES (7, '2021-10-23 11:48:13', 'botiga', 3, 30, 4, 7);
+INSERT INTO `pizzeria`.`empleat` (`empleat_id`, `nom`, `cognoms`, `botiga_id`, `telefon`, `repartidor_id`) VALUES (1, 'Gerard', 'Bolaños', 1, '544334567', 1);
+INSERT INTO `pizzeria`.`empleat` (`empleat_id`, `nom`, `cognoms`, `botiga_id`, `telefon`, `repartidor_id`) VALUES (2, 'Norberto ', 'Bonet', 2, '666557788', 2);
+INSERT INTO `pizzeria`.`empleat` (`empleat_id`, `nom`, `cognoms`, `botiga_id`, `telefon`, `repartidor_id`) VALUES (3, 'Josep ', 'Moron', 3, '654321477', 3);
+INSERT INTO `pizzeria`.`empleat` (`empleat_id`, `nom`, `cognoms`, `botiga_id`, `telefon`, `repartidor_id`) VALUES (4, 'Arancha ', 'Coll', 4, '677887766', 4);
+INSERT INTO `pizzeria`.`empleat` (`empleat_id`, `nom`, `cognoms`, `botiga_id`, `telefon`, `repartidor_id`) VALUES (5, 'Braulio ', 'Andres', 5, '655443322', 1);
+INSERT INTO `pizzeria`.`empleat` (`empleat_id`, `nom`, `cognoms`, `botiga_id`, `telefon`, `repartidor_id`) VALUES (6, 'Dulce ', 'del Pozo', 1, '677889900', 2);
+INSERT INTO `pizzeria`.`empleat` (`empleat_id`, `nom`, `cognoms`, `botiga_id`, `telefon`, `repartidor_id`) VALUES (7, 'Kevin ', 'Balaguer', 1, '657478990', 3);
+INSERT INTO `pizzeria`.`empleat` (`empleat_id`, `nom`, `cognoms`, `botiga_id`, `telefon`, `repartidor_id`) VALUES (8, 'Georgina', 'Guerra', 3, '677554455', 4);
+INSERT INTO `pizzeria`.`empleat` (`empleat_id`, `nom`, `cognoms`, `botiga_id`, `telefon`, `repartidor_id`) VALUES (9, 'Delfina ', 'Herrera', 2, '655667788', 1);
+INSERT INTO `pizzeria`.`empleat` (`empleat_id`, `nom`, `cognoms`, `botiga_id`, `telefon`, `repartidor_id`) VALUES (10, ' Lola ', 'Dueñas ', 5, '657900000', 2);
