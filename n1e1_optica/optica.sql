@@ -117,3 +117,10 @@ INSERT INTO `optica`.`marca` (`marca_id`, `nom`, `proveidor_id`) VALUES (2, 'Oak
 INSERT INTO `optica`.`marca` (`marca_id`, `nom`, `proveidor_id`) VALUES (3, 'Polaroid', 4);
 INSERT INTO `optica`.`marca` (`marca_id`, `nom`, `proveidor_id`) VALUES (4, 'Arnette', 1);
 INSERT INTO `optica`.`marca` (`marca_id`, `nom`, `proveidor_id`) VALUES (5, 'Tous', 2);
+
+INSERT INTO `optica`.`ulleres` (`ulleres_id`, `marca_id`, `graduacio_l`, `graduacio_r`, `muntura`, `muntura_color`, `vidre_color_l`, `vidre_color_r`, `preu`, `client_id`, `empleat_id`) VALUES (1, 1, 1.25, 0.25, 'pasta', 'transparente', 'transparente', 'transparente', 70, 1, 2);
+INSERT INTO `optica`.`ulleres` (`ulleres_id`, `marca_id`, `graduacio_l`, `graduacio_r`, `muntura`, `muntura_color`, `vidre_color_l`, `vidre_color_r`, `preu`, `client_id`, `empleat_id`) VALUES (2, 1, 1, 1, 'flotant', 'negra', 'transparente', 'transparente', 100, 2, 2);
+INSERT INTO `optica`.`ulleres` (`ulleres_id`, `marca_id`, `graduacio_l`, `graduacio_r`, `muntura`, `muntura_color`, `vidre_color_l`, `vidre_color_r`, `preu`, `client_id`, `empleat_id`) VALUES (3, 4, 0.25, 0.50, 'pasta', 'marron', 'transparente', 'transparente', 150, 3, 2);
+INSERT INTO `optica`.`ulleres` (`ulleres_id`, `marca_id`, `graduacio_l`, `graduacio_r`, `muntura`, `muntura_color`, `vidre_color_l`, `vidre_color_r`, `preu`, `client_id`, `empleat_id`) VALUES (4, 3, 1.25, 3, 'pasta', 'marron', 'transparente', 'transparente', 200, 4, 1);
+INSERT INTO `optica`.`ulleres` (`ulleres_id`, `marca_id`, `graduacio_l`, `graduacio_r`, `muntura`, `muntura_color`, `vidre_color_l`, `vidre_color_r`, `preu`, `client_id`, `empleat_id`) VALUES (5, 2, 2, 1, 'pasta', 'amarilla', 'transparente', 'transparente', 250, 5, 1);
+
