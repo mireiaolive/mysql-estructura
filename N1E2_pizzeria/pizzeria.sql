@@ -146,3 +146,14 @@ INSERT INTO `pizzeria`.`pizza` (`pizza_id`, `nom`) VALUES (7, 'New York');
 INSERT INTO `pizzeria`.`pizza` (`pizza_id`, `nom`) VALUES (8, 'Flammkuchen');
 INSERT INTO `pizzeria`.`pizza` (`pizza_id`, `nom`) VALUES (9, 'Cuatro Quesos ');
 INSERT INTO `pizzeria`.`pizza` (`pizza_id`, `nom`) VALUES (10, 'Cuatro Estaciones ');
+
+INSERT INTO `pizzeria`.`producte` (`producte_id`, `nom`, `descripcio`) VALUES (1, 'Cocacola', 'Bebida');
+INSERT INTO `pizzeria`.`producte` (`producte_id`, `nom`, `descripcio`) VALUES (2, 'Limonada', 'Bebida');
+INSERT INTO `pizzeria`.`producte` (`producte_id`, `nom`, `descripcio`) VALUES (3, 'Agua', 'Bebida');
+INSERT INTO `pizzeria`.`producte` (`producte_id`, `nom`, `descripcio`) VALUES (4, 'Alitas Pollo', 'Extras');
+INSERT INTO `pizzeria`.`producte` (`producte_id`, `nom`, `descripcio`) VALUES (5, 'Patatas', 'Extras');
+INSERT INTO `pizzeria`.`producte` (`producte_id`, `nom`, `descripcio`) VALUES (6, 'Mayonesa', 'Extras');
+INSERT INTO `pizzeria`.`producte` (`producte_id`, `nom`, `descripcio`, `pizza_id`) VALUES (7, 'Hamburguesa', 'Comida', 1);
+INSERT INTO `pizzeria`.`producte` (`producte_id`, `nom`, `descripcio`, `pizza_id`) VALUES (8, 'Pizza', 'Comida', 2);
+INSERT INTO `pizzeria`.`producte` (`producte_id`, `nom`, `descripcio`, `pizza_id`) VALUES (9, 'Pizza', 'Comida', 3);
+INSERT INTO `pizzeria`.`producte` (`producte_id`, `nom`, `descripcio`, `pizza_id`) VALUES (10, 'Pizza', 'Comida', 4);
