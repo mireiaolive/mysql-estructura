@@ -112,4 +112,8 @@ INSERT INTO `optica`.`empleat` (`empleat_id`, `nom`, `email`, `data_registre`) V
 INSERT INTO `optica`.`empleat` (`empleat_id`, `nom`, `email`, `data_registre`) VALUES (5, 'Sergi Pamies', 's.pamies@hotmail.com', '2023-01-09 13:17:02');
 INSERT INTO `optica`.`empleat` (`empleat_id`, `nom`, `email`, `data_registre`) VALUES (6, 'Olga Fuentes', 'o.fuentes@gmail.com', '2023-01-15 11:17:02');
 
-
+INSERT INTO `optica`.`marca` (`marca_id`, `nom`, `proveidor_id`) VALUES (1, 'Ray-Ban', 1);
+INSERT INTO `optica`.`marca` (`marca_id`, `nom`, `proveidor_id`) VALUES (2, 'Oakley', 1);
+INSERT INTO `optica`.`marca` (`marca_id`, `nom`, `proveidor_id`) VALUES (3, 'Polaroid', 4);
+INSERT INTO `optica`.`marca` (`marca_id`, `nom`, `proveidor_id`) VALUES (4, 'Arnette', 1);
+INSERT INTO `optica`.`marca` (`marca_id`, `nom`, `proveidor_id`) VALUES (5, 'Tous', 2);
