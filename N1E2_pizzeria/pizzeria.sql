@@ -88,5 +88,10 @@ CREATE TABLE IF NOT EXISTS `pizzeria`.`client` (
   PRIMARY KEY (`client_id`))
 ENGINE = InnoDB;
 
+INSERT INTO `pizzeria`.`botiga` (`botiga_id`, `carrer`, `numero`, `codi_postal`, `localitat`, `provincia`) VALUES (1, ' Karl Marx, Plaça de', '1', '08005', 'Barcelona', 'Barcelona');
+INSERT INTO `pizzeria`.`botiga` (`botiga_id`, `carrer`, `numero`, `codi_postal`, `localitat`, `provincia`) VALUES (2, 'Laberint, Carrer del', '34', '08991', 'Martorell', 'Barcelona');
+INSERT INTO `pizzeria`.`botiga` (`botiga_id`, `carrer`, `numero`, `codi_postal`, `localitat`, `provincia`) VALUES (3, 'Lázaro Cárdenas, Carrer de', '33', '08775', 'Platja D\'Aro', 'Girona');
+INSERT INTO `pizzeria`.`botiga` (`botiga_id`, `carrer`, `numero`, `codi_postal`, `localitat`, `provincia`) VALUES (4, 'Lesseps, Plaça de', '1', '09885', 'Cambrils', 'Tarragona');
+INSERT INTO `pizzeria`.`botiga` (`botiga_id`, `carrer`, `numero`, `codi_postal`, `localitat`, `provincia`) VALUES (5, 'Rajoler, Carrer del', '5', '09877', 'Mollerussa', 'Lleida');
 
 
