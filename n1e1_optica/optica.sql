@@ -130,4 +130,11 @@ SELECT * FROM `optica`.`ulleres` WHERE `client_id` = 1 ORDER BY `ulleres_id` LIM
 -- Llista les diferents ulleres que ha venut un empleat durant un any --
 SELECT * FROM `optica`.`ulleres` WHERE `empleat_id` = 1 ORDER BY `ulleres_id` LIMIT 300 OFFSET 0;
 
+-- Llista els diferents proveïdors que han subministrat ulleres venudes amb èxit per l'òptica --
+SELECT proveidor.nom 
+FROM proveidor
+LEFT JOIN marca USING (proveidor_id)
+LEFT JOIN ulleres USING (marca_id)
+GROUP BY nom
+
 
