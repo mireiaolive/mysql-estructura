@@ -105,4 +105,10 @@ INSERT INTO `pizzeria`.`client` (`client_id`, `nom`, `cognoms`, `carrer`, `codi_
 INSERT INTO `pizzeria`.`client` (`client_id`, `nom`, `cognoms`, `carrer`, `codi_postal`, `provincia`, `telefon`) VALUES (9, 'Marcela ', 'Torregrosa', 'Nau, Carrer de la', '07763', 'Tarragona', '666645337');
 INSERT INTO `pizzeria`.`client` (`client_id`, `nom`, `cognoms`, `carrer`, `codi_postal`, `provincia`, `telefon`) VALUES (10, 'Mari ', 'Toledano ', 'Nínive, Carrer de', '01234', 'tarragona', '699885463');
 
-
+INSERT INTO `pizzeria`.`comanda` (`comanda_id`, `data_hora`, `delivery`, `quantitat`, `preu`, `repartidor_id`, `client_id`) VALUES (1, '2021-10-23 11:48:13', 'botiga', 1, 10, 1, 1);
+INSERT INTO `pizzeria`.`comanda` (`comanda_id`, `data_hora`, `delivery`, `quantitat`, `preu`, `repartidor_id`, `client_id`) VALUES (2, '2021-10-23 11:48:13', 'botiga', 2, 20, 1, 2);
+INSERT INTO `pizzeria`.`comanda` (`comanda_id`, `data_hora`, `delivery`, `quantitat`, `preu`, `repartidor_id`, `client_id`) VALUES (3, '2021-10-23 11:48:13', 'botiga', 3, 30, 3, 3);
+INSERT INTO `pizzeria`.`comanda` (`comanda_id`, `data_hora`, `delivery`, `quantitat`, `preu`, `repartidor_id`, `client_id`) VALUES (4, '2021-10-23 11:48:13', 'domicili', 1, 10, 3, 4);
+INSERT INTO `pizzeria`.`comanda` (`comanda_id`, `data_hora`, `delivery`, `quantitat`, `preu`, `repartidor_id`, `client_id`) VALUES (5, '2021-10-23 11:48:13', 'domicili', 2, 20, 3, 5);
+INSERT INTO `pizzeria`.`comanda` (`comanda_id`, `data_hora`, `delivery`, `quantitat`, `preu`, `repartidor_id`, `client_id`) VALUES (6, '2021-10-23 11:48:13', 'domicili', 3, 30, 3, 6);
+INSERT INTO `pizzeria`.`comanda` (`comanda_id`, `data_hora`, `delivery`, `quantitat`, `preu`, `repartidor_id`, `client_id`) VALUES (7, '2021-10-23 11:48:13', 'botiga', 3, 30, 4, 7);
