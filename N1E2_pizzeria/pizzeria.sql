@@ -33,10 +33,12 @@ CREATE TABLE IF NOT EXISTS `pizzeria`.`comanda` (
   `preu` FLOAT NULL,
   `repartidor_id` INT NULL,
   `client_id` INT NULL,
+  `producte_id` INT NULL,
   PRIMARY KEY (`comanda_id`),
   INDEX `cuiner_repartidor_id_idx` (`repartidor_id` ASC),
   INDEX `client_id_idx` (`client_id` ASC),
-  CONSTRAINT `repartidorid`
+  INDEX `proucte_id_idx` (`producte_id` ASC),
+  CONSTRAINT `repartidor_id`
     FOREIGN KEY (`repartidor_id`)
     REFERENCES `pizzeria`.`repartidor` (`repartidor_id`)
     ON DELETE NO ACTION
@@ -44,6 +46,11 @@ CREATE TABLE IF NOT EXISTS `pizzeria`.`comanda` (
   CONSTRAINT `client_id`
     FOREIGN KEY (`client_id`)
     REFERENCES `pizzeria`.`client` (`client_id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `proucte_id`
+    FOREIGN KEY (`producte_id`)
+    REFERENCES `pizzeria`.`producte` (`producte_id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
@@ -55,14 +62,14 @@ CREATE TABLE IF NOT EXISTS `pizzeria`.`pizza` (
 ENGINE = InnoDB;
 
 CREATE TABLE IF NOT EXISTS `pizzeria`.`producte` (
-  `producte_id` INT NOT NULL,
-  `nom` VARCHAR(45) NULL,
-  `descripcio` VARCHAR(45) NULL,
-  `imatge` VARCHAR(45) NULL,
-  `preu` FLOAT NULL,
-  `pizza_id` INT NULL,
-  PRIMARY KEY (`producte_id`),
-  INDEX `pizza_id_idx` (`pizza_id` ASC),
+  `producte_id` INT NOT NULL COMMENT '',
+  `nom` VARCHAR(45) NULL COMMENT '',
+  `descripcio` VARCHAR(45) NULL COMMENT '',
+  `imatge` VARCHAR(45) NULL COMMENT '',
+  `preu` FLOAT NULL COMMENT '',
+  `pizza_id` INT NULL COMMENT '',
+  PRIMARY KEY (`producte_id`)  COMMENT '',
+  INDEX `pizza_id_idx` (`pizza_id` ASC)  COMMENT '',
   CONSTRAINT `pizza_id`
     FOREIGN KEY (`pizza_id`)
     REFERENCES `pizzeria`.`pizza` (`pizza_id`)
@@ -157,3 +164,4 @@ INSERT INTO `pizzeria`.`producte` (`producte_id`, `nom`, `descripcio`, `pizza_id
 INSERT INTO `pizzeria`.`producte` (`producte_id`, `nom`, `descripcio`, `pizza_id`) VALUES (8, 'Pizza', 'Comida', 2);
 INSERT INTO `pizzeria`.`producte` (`producte_id`, `nom`, `descripcio`, `pizza_id`) VALUES (9, 'Pizza', 'Comida', 3);
 INSERT INTO `pizzeria`.`producte` (`producte_id`, `nom`, `descripcio`, `pizza_id`) VALUES (10, 'Pizza', 'Comida', 4);
+
