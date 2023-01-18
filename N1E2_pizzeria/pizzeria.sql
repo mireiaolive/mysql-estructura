@@ -48,7 +48,7 @@ CREATE TABLE IF NOT EXISTS `pizzeria`.`comanda` (
     REFERENCES `pizzeria`.`client` (`client_id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `proucte_id`
+  CONSTRAINT `producte_id`
     FOREIGN KEY (`producte_id`)
     REFERENCES `pizzeria`.`producte` (`producte_id`)
     ON DELETE NO ACTION
