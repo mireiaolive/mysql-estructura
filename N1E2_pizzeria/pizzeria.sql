@@ -62,14 +62,14 @@ CREATE TABLE IF NOT EXISTS `pizzeria`.`pizza` (
 ENGINE = InnoDB;
 
 CREATE TABLE IF NOT EXISTS `pizzeria`.`producte` (
-  `producte_id` INT NOT NULL COMMENT '',
-  `nom` VARCHAR(45) NULL COMMENT '',
-  `descripcio` VARCHAR(45) NULL COMMENT '',
-  `imatge` VARCHAR(45) NULL COMMENT '',
-  `preu` FLOAT NULL COMMENT '',
-  `pizza_id` INT NULL COMMENT '',
-  PRIMARY KEY (`producte_id`)  COMMENT '',
-  INDEX `pizza_id_idx` (`pizza_id` ASC)  COMMENT '',
+  `producte_id` INT NOT NULL,
+  `nom` VARCHAR(45) NULL,
+  `descripcio` VARCHAR(45) NULL,
+  `imatge` VARCHAR(45) NULL,
+  `preu` FLOAT NULL,
+  `pizza_id` INT NULL,
+  PRIMARY KEY (`producte_id`),
+  INDEX `pizza_id_idx` (`pizza_id` ASC),
   CONSTRAINT `pizza_id`
     FOREIGN KEY (`pizza_id`)
     REFERENCES `pizzeria`.`pizza` (`pizza_id`)
