@@ -211,3 +211,31 @@ INSERT INTO `youtube`.`LikesDislikesComentari` (`usuari_id`, `comentari_id`, `da
 INSERT INTO `youtube`.`LikesDislikesComentari` (`usuari_id`, `comentari_id`, `data_hora`, `isLike`) VALUES (4, 5, '2023-01-31 09:13:14', true);
 INSERT INTO `youtube`.`LikesDislikesComentari` (`usuari_id`, `comentari_id`, `data_hora`, `isLike`) VALUES (5, 6, '2023-01-29 09:13:21', true);
 INSERT INTO `youtube`.`LikesDislikesComentari` (`usuari_id`, `comentari_id`, `data_hora`, `isLike`) VALUES (2, 3, '2023-01-28 09:13:00', true);
+
+-- create data to playlist --
+INSERT INTO `youtube`.`playlist` (`playlist_id`, `nom`, `data_creacio`, `estat`, `usuari_id`) VALUES (1, 'Olimpiadas', '2023-01-19', 'privat', 1);
+INSERT INTO `youtube`.`playlist` (`playlist_id`, `nom`, `data_creacio`, `estat`, `usuari_id`) VALUES (2, 'Oscars', '2023-01-17', 'public', 2);
+INSERT INTO `youtube`.`playlist` (`playlist_id`, `nom`, `data_creacio`, `estat`, `usuari_id`) VALUES (3, 'Humor amarillo', '2023-01-01', 'privat', 3);
+INSERT INTO `youtube`.`playlist` (`playlist_id`, `nom`, `data_creacio`, `estat`, `usuari_id`) VALUES (4, 'Mejores momentos del tenis', '2023-01-09', 'public', 4);
+INSERT INTO `youtube`.`playlist` (`playlist_id`, `nom`, `data_creacio`, `estat`, `usuari_id`) VALUES (5, 'Julio Iglesias', '2023-01-11', 'privat', 5);
+
+-- create data to subscriure --
+INSERT INTO `youtube`.`subscriure` (`subscriure_id`, `canal_id`, `usuari_id`) VALUES (1, 1, 1);
+INSERT INTO `youtube`.`subscriure` (`subscriure_id`, `canal_id`, `usuari_id`) VALUES (2, 2, 2);
+INSERT INTO `youtube`.`subscriure` (`subscriure_id`, `canal_id`, `usuari_id`) VALUES (3, 3, 3);
+INSERT INTO `youtube`.`subscriure` (`subscriure_id`, `canal_id`, `usuari_id`) VALUES (4, 4, 4);
+INSERT INTO `youtube`.`subscriure` (`subscriure_id`, `canal_id`, `usuari_id`) VALUES (5, 5, 5);
+INSERT INTO `youtube`.`subscriure` (`subscriure_id`, `canal_id`, `usuari_id`) VALUES (6, 6, 6);
+INSERT INTO `youtube`.`subscriure` (`subscriure_id`, `canal_id`, `usuari_id`) VALUES (7, 7, 7);
+
+-- create data to usuari --
+INSERT INTO `youtube`.`usuari` (`usuari_id`, `email`, `password`, `nom`, `bday`, `sexe`, `pais`, `codi_postal`) VALUES (1, 'a.a@hotmail.com', '645^ZsDXMG2O', 'Adela Arjona', '1980-02-02', 'dona', 'Espanya', '08995');
+INSERT INTO `youtube`.`usuari` (`usuari_id`, `email`, `password`, `nom`, `bday`, `sexe`, `pais`, `codi_postal`) VALUES (2, 'a.alvir@hotmail.com', '6fbR9LBGVu&S@fKB', 'Álvaro Vegas ', '1982-02-01', 'home', 'Espanya', '08996');
+INSERT INTO `youtube`.`usuari` (`usuari_id`, `email`, `password`, `nom`, `bday`, `sexe`, `pais`, `codi_postal`) VALUES (3, 'a.mayo@hotmail.com', '8ogH%k354jpeEJwv', 'Andres Mayo ', '1999-04-02', 'home', 'Espanya', '09445');
+INSERT INTO `youtube`.`usuari` (`usuari_id`, `email`, `password`, `nom`, `bday`, `sexe`, `pais`, `codi_postal`) VALUES (4, 'marialuisa.a@hotmail.com', 'Fw4v#j6E7q3d%njD', 'Maria-Luisa Castañeda ', '1985-06-02', 'dona', 'Uruguay', '04456');
+INSERT INTO `youtube`.`usuari` (`usuari_id`, `email`, `password`, `nom`, `bday`, `sexe`, `pais`, `codi_postal`) VALUES (5, 'sebastian.a@hotmail.com', '5%GgL6L!FNwc6RK9', 'Sebastiana Vergara ', '1999-02-09', 'home', 'Argentina', '00045');
+INSERT INTO `youtube`.`usuari` (`usuari_id`, `email`, `password`, `nom`, `bday`, `sexe`, `pais`, `codi_postal`) VALUES (6, 'arancha.a@hotmail.com', '!onUpRsfREFGLU9%', 'Arancha Figueroa ', '2000-02-02', 'dona', 'Islas Baleares', '03445');
+INSERT INTO `youtube`.`usuari` (`usuari_id`, `email`, `password`, `nom`, `bday`, `sexe`, `pais`, `codi_postal`) VALUES (7, 'adela.a@hotmail.com', 'vPKYd!FJAFxm5$zG', 'Adela Barroso ', '1989-03-02', 'dona', 'Venezuela', '09556');
+INSERT INTO `youtube`.`usuari` (`usuari_id`, `email`, `password`, `nom`, `bday`, `sexe`, `pais`, `codi_postal`) VALUES (8, 'sheila@hotmail.com', 'v%@rYS!HHZFV9BX%', 'Sheila Camacho ', '1981-02-20', 'dona', 'Espanya', '08006');
+INSERT INTO `youtube`.`usuari` (`usuari_id`, `email`, `password`, `nom`, `bday`, `sexe`, `pais`, `codi_postal`) VALUES (9, 'dina.peralititass@hotmail.com', 'c$jB88uXSka5y%74', 'Dina Peralta', '1987-09-10', 'dona', 'Chile', '08774');
+INSERT INTO `youtube`.`usuari` (`usuari_id`, `email`, `password`, `nom`, `bday`, `sexe`, `pais`, `codi_postal`) VALUES (10, 'adelita45@hotmail.com', 'vPKYd!FJAFxm5$zG', 'Adela Barroso ', '1989-03-02', 'dona', 'Venezuela', '08980');
