@@ -185,9 +185,13 @@ INSERT INTO `pizzeria`.`producte` (`producte_id`, `nom`, `descripcio`, `pizza_id
 
 SELECT p.descripcio, b.localitat
 FROM producte p
-JOIN botiga b ON b.botiga_id = p.producte_id;
+INNER JOIN botiga b ON b.botiga_id = p.producte_id;
 
 -- Llista quantes comandes ha efectuat un determinat empleat/da. --
+-- select * from comandes;
+-- select * from empleat;
+
+
 
 
 
