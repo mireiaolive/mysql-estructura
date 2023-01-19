@@ -190,6 +190,25 @@ CREATE TABLE IF NOT EXISTS `spotify`.`premium` (
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
+INSERT INTO `spotify`.`album` (`album_id`, `titol`, `publicacio`, `imatge`) VALUES (1, 'The Best of Jazz', '2023-01-17 09:08:45', '1,jpg');
+INSERT INTO `spotify`.`album` (`album_id`, `titol`, `publicacio`, `imatge`) VALUES (2, 'Deportes tv1', '2023-01-21 09:08:45', '2.jpg');
+INSERT INTO `spotify`.`album` (`album_id`, `titol`, `publicacio`, `imatge`) VALUES (3, 'Pasteles', '2023-01-20 09:08:45', '3.jpg');
+INSERT INTO `spotify`.`album` (`album_id`, `titol`, `publicacio`, `imatge`) VALUES (4, 'Psicologia', '2023-01-20 09:08:45', '4.jpg');
+INSERT INTO `spotify`.`album` (`album_id`, `titol`, `publicacio`, `imatge`) VALUES (5, 'Padel tecnicas', '2023-01-20 09:08:45', '5.jpg');
+INSERT INTO `spotify`.`album` (`album_id`, `titol`, `publicacio`, `imatge`) VALUES (6, 'Meditacion', '2023-01-20 09:08:45', '6.jpg');
+INSERT INTO `spotify`.`album` (`album_id`, `titol`, `publicacio`, `imatge`) VALUES (7, 'Yoga', '2023-01-20 09:08:45', '7.jpg');
+INSERT INTO `spotify`.`album` (`album_id`, `titol`, `publicacio`, `imatge`) VALUES (8, 'The Best of Bob Marley', '2023-01-20 09:08:45', '8.jpg');
+INSERT INTO `spotify`.`album` (`album_id`, `titol`, `publicacio`, `imatge`) VALUES (9, 'Goles Liga 92', '2023-01-20 09:08:45', '9.jpg');
+INSERT INTO `spotify`.`album` (`album_id`, `titol`, `publicacio`, `imatge`) VALUES (10, 'Discotecas Barcelona', '2023-01-20 09:08:45', '10.jpg');
+
+INSERT INTO `spotify`.`artista` (`artista_id`, `nom`, `imatge`, `artista_id_a`, `artista_id_b`) VALUES (1, 'Michael Jackson', 'mi.jpg', 1, 1);
+INSERT INTO `spotify`.`artista` (`artista_id`, `nom`, `imatge`, `artista_id_a`, `artista_id_b`) VALUES (2, 'George Michael', 'ge.jpg', 2, 2);
+INSERT INTO `spotify`.`artista` (`artista_id`, `nom`, `imatge`, `artista_id_a`, `artista_id_b`) VALUES (3, 'Prince', 'pr.jpg', 3, 3);
+INSERT INTO `spotify`.`artista` (`artista_id`, `nom`, `imatge`, `artista_id_a`, `artista_id_b`) VALUES (4, 'Henrry Mancini', 'he.jpg', 4, 4);
+INSERT INTO `spotify`.`artista` (`artista_id`, `nom`, `imatge`, `artista_id_a`, `artista_id_b`) VALUES (5, 'Herb Alpert', 'herb.jpg', 5, 5);
+INSERT INTO `spotify`.`artista` (`artista_id`, `nom`, `imatge`, `artista_id_a`, `artista_id_b`) VALUES (6, 'Tina Turner', 'ti.jpg', 6, 6);
+INSERT INTO `spotify`.`artista` (`artista_id`, `nom`, `imatge`, `artista_id_a`, `artista_id_b`) VALUES (7, 'Bananarama', 'ba.jpg', 7, 7);
+
 SET FOREIGN_KEY_CHECKS=0;
 
 
