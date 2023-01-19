@@ -209,6 +209,24 @@ INSERT INTO `spotify`.`artista` (`artista_id`, `nom`, `imatge`, `artista_id_a`, 
 INSERT INTO `spotify`.`artista` (`artista_id`, `nom`, `imatge`, `artista_id_a`, `artista_id_b`) VALUES (6, 'Tina Turner', 'ti.jpg', 6, 6);
 INSERT INTO `spotify`.`artista` (`artista_id`, `nom`, `imatge`, `artista_id_a`, `artista_id_b`) VALUES (7, 'Bananarama', 'ba.jpg', 7, 7);
 
+INSERT INTO `spotify`.`artistes_relacionats` (`artista_id_a`, `artista_id_b`) VALUES (1, 1);
+INSERT INTO `spotify`.`artistes_relacionats` (`artista_id_a`, `artista_id_b`) VALUES (2, 2);
+INSERT INTO `spotify`.`artistes_relacionats` (`artista_id_a`, `artista_id_b`) VALUES (3, 3);
+INSERT INTO `spotify`.`artistes_relacionats` (`artista_id_a`, `artista_id_b`) VALUES (4, 4);
+INSERT INTO `spotify`.`artistes_relacionats` (`artista_id_a`, `artista_id_b`) VALUES (5, 5);
+INSERT INTO `spotify`.`artistes_relacionats` (`artista_id_a`, `artista_id_b`) VALUES (6, 6);
+INSERT INTO `spotify`.`artistes_relacionats` (`artista_id_a`, `artista_id_b`) VALUES (7, 7);
+
+INSERT INTO `spotify`.`canco` (`canco_id`, `add_data`, `free_id`, `premium_id`, `album_id`) VALUES (1, '2023-01-12', 1, 1, 1);
+INSERT INTO `spotify`.`canco` (`canco_id`, `add_data`, `free_id`, `premium_id`, `album_id`) VALUES (2, '2023-01-18', 2, 2, 2);
+INSERT INTO `spotify`.`canco` (`canco_id`, `add_data`, `free_id`, `premium_id`, `album_id`) VALUES (3, '2023-01-24', 3, 3, 3);
+INSERT INTO `spotify`.`canco` (`canco_id`, `add_data`, `free_id`, `premium_id`, `album_id`) VALUES (4, '2022-12-15', 4, 4, 4);
+INSERT INTO `spotify`.`canco` (`canco_id`, `add_data`, `free_id`, `premium_id`, `album_id`) VALUES (5, '2023-01-02', 5, 5, 5);
+INSERT INTO `spotify`.`canco` (`canco_id`, `add_data`, `free_id`, `premium_id`, `album_id`) VALUES (6, '2023-01-06', 6, 6, 6);
+INSERT INTO `spotify`.`canco` (`canco_id`, `add_data`, `free_id`, `premium_id`, `album_id`) VALUES (7, '2022-12-15', 7, 7, 7);
+INSERT INTO `spotify`.`canco` (`canco_id`, `add_data`, `free_id`, `premium_id`, `album_id`) VALUES (8, '2022-12-06', 8, 8, 8);
+INSERT INTO `spotify`.`canco` (`canco_id`, `add_data`, `free_id`, `premium_id`, `album_id`) VALUES (9, '2023-01-02', 9, 9, 9);
+INSERT INTO `spotify`.`canco` (`canco_id`, `add_data`, `free_id`, `premium_id`, `album_id`) VALUES (10, '2022-12-14', 10, 10, 10);
 SET FOREIGN_KEY_CHECKS=0;
 
 
