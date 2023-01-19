@@ -260,6 +260,27 @@ INSERT INTO `spotify`.`free` (`free_id`, `email`, `nom`, `password`, `bday`, `se
 INSERT INTO `spotify`.`free` (`free_id`, `email`, `nom`, `password`, `bday`, `sexe`, `pais`, `codi_postal`) VALUES (5, 'jimena@hotmail.com', 'Jimena Moro', 'f3%a%tZ9%5y9$F4j', '1985-12-11', 'home', 'Espanya', '08780');
 INSERT INTO `spotify`.`free` (`free_id`, `email`, `nom`, `password`, `bday`, `sexe`, `pais`, `codi_postal`) VALUES (6, 'mirenalcaraz@hotmail.com', 'Miren Alcaraz', '&mL%2jLaHx2XnP6v', '1983-01-20', 'dona', 'Espanya', '08231');
 
-SET FOREIGN_KEY_CHECKS=0;
+INSERT INTO `spotify`.`paypal` (`paypal_id`, `nom`, `n_ordre`, `data_ordre`, `total`) VALUES (1, 'Celia', 1, '1', '40');
+INSERT INTO `spotify`.`paypal` (`paypal_id`, `nom`, `n_ordre`, `data_ordre`, `total`) VALUES (2, 'Jessica', 2, '2', '60');
+INSERT INTO `spotify`.`paypal` (`paypal_id`, `nom`, `n_ordre`, `data_ordre`, `total`) VALUES (3, 'Sonia', 3, '3', '50');
+INSERT INTO `spotify`.`paypal` (`paypal_id`, `nom`, `n_ordre`, `data_ordre`, `total`) VALUES (4, 'Pol', 4, '4', '70');
+INSERT INTO `spotify`.`paypal` (`paypal_id`, `nom`, `n_ordre`, `data_ordre`, `total`) VALUES (5, 'Josep', 5, '5', '34');
+INSERT INTO `spotify`.`paypal` (`paypal_id`, `nom`, `n_ordre`, `data_ordre`, `total`) VALUES (6, 'Carles', 6, '6', '20');
 
+INSERT INTO `spotify`.`playlist` (`playlist_id`, `titol`, `n_songs`, `data_creacio`, `canco_id`) VALUES (1, 'Hits 80', 2, '2023-01-04', 1);
+INSERT INTO `spotify`.`playlist` (`playlist_id`, `titol`, `n_songs`, `data_creacio`, `canco_id`) VALUES (2, 'Hits 90', 3, '2023-01-10', 2);
+INSERT INTO `spotify`.`playlist` (`playlist_id`, `titol`, `n_songs`, `data_creacio`, `canco_id`) VALUES (3, 'Hits techno', 4, '2023-01-02', 3);
+INSERT INTO `spotify`.`playlist` (`playlist_id`, `titol`, `n_songs`, `data_creacio`, `canco_id`) VALUES (4, 'Deporte en Tanzania', 6, '2023-01-17', 4);
+INSERT INTO `spotify`.`playlist` (`playlist_id`, `titol`, `n_songs`, `data_creacio`, `canco_id`) VALUES (5, 'Hits 70', 4, '2023-01-11', 5);
+
+INSERT INTO `spotify`.`premium` (`premium_id`, `free_id`, `data_inici`, `data_renovacio`, `pagament`, `credit_id`, `paypal_id`) VALUES (1, 1, '2023-01-04', '2024-01-04', 'credit', 1, 1);
+INSERT INTO `spotify`.`premium` (`premium_id`, `free_id`, `data_inici`, `data_renovacio`, `pagament`, `credit_id`, `paypal_id`) VALUES (2, 2, '2020-01-04', '2024-01-04', 'paypal', 2, 2);
+INSERT INTO `spotify`.`premium` (`premium_id`, `free_id`, `data_inici`, `data_renovacio`, `pagament`, `credit_id`, `paypal_id`) VALUES (3, 3, '2022-01-04', '2024-01-04', 'paypal', 3, 3);
+INSERT INTO `spotify`.`premium` (`premium_id`, `free_id`, `data_inici`, `data_renovacio`, `pagament`, `credit_id`, `paypal_id`) VALUES (4, 4, '2020-01-10', '2024-01-04', 'credit', 4, 4);
+INSERT INTO `spotify`.`premium` (`premium_id`, `free_id`, `data_inici`, `data_renovacio`, `pagament`, `credit_id`, `paypal_id`) VALUES (5, 5, '2023-01-14', '2024-01-04', 'credit', 5, 5);
+INSERT INTO `spotify`.`premium` (`premium_id`, `free_id`, `data_inici`, `data_renovacio`, `pagament`, `credit_id`, `paypal_id`) VALUES (6, 6, '2022-01-04', '2024-01-04', 'credit', 6, 6);
+INSERT INTO `spotify`.`premium` (`premium_id`, `free_id`, `data_inici`, `data_renovacio`, `pagament`, `credit_id`, `paypal_id`) VALUES (7, 7, '2023-05-11', '2024-01-04', 'credit', 7, 7);
+INSERT INTO `spotify`.`premium` (`premium_id`, `free_id`, `data_inici`, `data_renovacio`, `pagament`, `credit_id`, `paypal_id`) VALUES (8, 8, '2021-03-04', '2024-01-04', 'paypal', 8, 8);
+
+SET FOREIGN_KEY_CHECKS=0;
 
