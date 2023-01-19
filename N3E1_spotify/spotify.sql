@@ -227,6 +227,39 @@ INSERT INTO `spotify`.`canco` (`canco_id`, `add_data`, `free_id`, `premium_id`, 
 INSERT INTO `spotify`.`canco` (`canco_id`, `add_data`, `free_id`, `premium_id`, `album_id`) VALUES (8, '2022-12-06', 8, 8, 8);
 INSERT INTO `spotify`.`canco` (`canco_id`, `add_data`, `free_id`, `premium_id`, `album_id`) VALUES (9, '2023-01-02', 9, 9, 9);
 INSERT INTO `spotify`.`canco` (`canco_id`, `add_data`, `free_id`, `premium_id`, `album_id`) VALUES (10, '2022-12-14', 10, 10, 10);
+
+INSERT INTO `spotify`.`credit` (`credit_id`, `num_targeta`, `caducitat`, `codi_seguretat`, `n_ordre`, `data_ordre`, `total`) VALUES (1, 3334567, '2026-01-10', '321', 1, '2023-01-14', '40');
+INSERT INTO `spotify`.`credit` (`credit_id`, `num_targeta`, `caducitat`, `codi_seguretat`, `n_ordre`, `data_ordre`, `total`) VALUES (2, 6556789, '2028-01-14', '345', 2, '2023-01-12', '30');
+INSERT INTO `spotify`.`credit` (`credit_id`, `num_targeta`, `caducitat`, `codi_seguretat`, `n_ordre`, `data_ordre`, `total`) VALUES (3, 7223478, '2029-01-20', '456', 3, '2023-01-11', '40');
+INSERT INTO `spotify`.`credit` (`credit_id`, `num_targeta`, `caducitat`, `codi_seguretat`, `n_ordre`, `data_ordre`, `total`) VALUES (4, 8667789, '2030-01-13', '123', 4, '2023-01-10', '10');
+INSERT INTO `spotify`.`credit` (`credit_id`, `num_targeta`, `caducitat`, `codi_seguretat`, `n_ordre`, `data_ordre`, `total`) VALUES (5, 6666787, '2024-11-10', '234', 5, '2023-01-09', '40');
+
+INSERT INTO `spotify`.`favorit` (`favorit_id`, `album_id`, `free_id`, `premium_id`) VALUES (1, 1, 1, 1);
+INSERT INTO `spotify`.`favorit` (`favorit_id`, `album_id`, `free_id`, `premium_id`) VALUES (2, 2, 2, 2);
+INSERT INTO `spotify`.`favorit` (`favorit_id`, `album_id`, `free_id`, `premium_id`) VALUES (3, 3, 3, 3);
+INSERT INTO `spotify`.`favorit` (`favorit_id`, `album_id`, `free_id`, `premium_id`) VALUES (4, 4, 4, 4);
+INSERT INTO `spotify`.`favorit` (`favorit_id`, `album_id`, `free_id`, `premium_id`) VALUES (5, 5, 5, 5);
+INSERT INTO `spotify`.`favorit` (`favorit_id`, `album_id`, `free_id`, `premium_id`) VALUES (6, 6, 6, 6);
+INSERT INTO `spotify`.`favorit` (`favorit_id`, `album_id`, `free_id`, `premium_id`) VALUES (7, 7, 7, 7);
+
+INSERT INTO `spotify`.`follow` (`free_id`, `premium_id`, `artista_id`) VALUES (1, 1, 1);
+INSERT INTO `spotify`.`follow` (`free_id`, `premium_id`, `artista_id`) VALUES (2, 2, 1);
+INSERT INTO `spotify`.`follow` (`free_id`, `premium_id`, `artista_id`) VALUES (3, 3, 1);
+INSERT INTO `spotify`.`follow` (`free_id`, `premium_id`, `artista_id`) VALUES (4, 4, 1);
+INSERT INTO `spotify`.`follow` (`free_id`, `premium_id`, `artista_id`) VALUES (5, 5, 2);
+INSERT INTO `spotify`.`follow` (`free_id`, `premium_id`, `artista_id`) VALUES (6, 6, 2);
+INSERT INTO `spotify`.`follow` (`free_id`, `premium_id`, `artista_id`) VALUES (7, 7, 3);
+INSERT INTO `spotify`.`follow` (`free_id`, `premium_id`, `artista_id`) VALUES (8, 8, 3);
+INSERT INTO `spotify`.`follow` (`free_id`, `premium_id`, `artista_id`) VALUES (9, 9, 3);
+INSERT INTO `spotify`.`follow` (`free_id`, `premium_id`, `artista_id`) VALUES (10, 10, 3);
+
+INSERT INTO `spotify`.`free` (`free_id`, `email`, `nom`, `password`, `bday`, `sexe`, `pais`, `codi_postal`) VALUES (1, 'e.caner89@hotmail.com', 'Elena Cañizares', 'qwFKGSFx^2e#eM95', '1988-01-11', 'dona', 'Espanya', '08980');
+INSERT INTO `spotify`.`free` (`free_id`, `email`, `nom`, `password`, `bday`, `sexe`, `pais`, `codi_postal`) VALUES (2, 'aroonarce@hotmail.com', 'Aaron Arce ', 'bVW7378tPzDb#j26', '1990-01-11', 'home', 'Chile', '08980');
+INSERT INTO `spotify`.`free` (`free_id`, `email`, `nom`, `password`, `bday`, `sexe`, `pais`, `codi_postal`) VALUES (3, 'andressouad@hotmail.com', 'Souad Andres', 'uECUxH5T3g^6uy23', '1991-08-11', 'home', 'Uruguay', '08581');
+INSERT INTO `spotify`.`free` (`free_id`, `email`, `nom`, `password`, `bday`, `sexe`, `pais`, `codi_postal`) VALUES (4, 'andressouad@hotmail.com', 'Javier Mora', '#Bk4FgjiKd%hGGYp', '1981-09-11', 'home', 'Espanya', '08980');
+INSERT INTO `spotify`.`free` (`free_id`, `email`, `nom`, `password`, `bday`, `sexe`, `pais`, `codi_postal`) VALUES (5, 'jimena@hotmail.com', 'Jimena Moro', 'f3%a%tZ9%5y9$F4j', '1985-12-11', 'home', 'Espanya', '08780');
+INSERT INTO `spotify`.`free` (`free_id`, `email`, `nom`, `password`, `bday`, `sexe`, `pais`, `codi_postal`) VALUES (6, 'mirenalcaraz@hotmail.com', 'Miren Alcaraz', '&mL%2jLaHx2XnP6v', '1983-01-20', 'dona', 'Espanya', '08231');
+
 SET FOREIGN_KEY_CHECKS=0;
 
 
