@@ -162,6 +162,24 @@ CREATE TABLE IF NOT EXISTS `youtube`.`playlist` (
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
+-- create table etiqueta_video --
+CREATE TABLE IF NOT EXISTS `youtube`.`etiqueta_video` (
+  `etiqueta_id` INT NULL COMMENT '',
+  `video_id` INT NULL COMMENT '',
+  INDEX `FK_video_ev_idx` (`video_id` ASC)  COMMENT '',
+  INDEX `FK_etiqueta_ev_idx` (`etiqueta_id` ASC)  COMMENT '',
+  CONSTRAINT `FK_video_ev`
+    FOREIGN KEY (`video_id`)
+    REFERENCES `youtube`.`video` (`video_id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `FK_etiqueta_ev`
+    FOREIGN KEY (`etiqueta_id`)
+    REFERENCES `youtube`.`etiqueta` (`etiqueta_id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
 
 -- create data to canal --
 INSERT INTO `youtube`.`canal` (`canal_id`, `nom`, `descripcio`, `publicacio`, `usuari_id`) VALUES (1, 'Hits de los 80', 'Las 100 mejores canciones de los 80 · Eurythmics - Sweet Dreams (Are made of this) (1983) · Yazz - The only way is up (1988) ', '2022-01-12', 1);
@@ -252,3 +270,10 @@ INSERT INTO `youtube`.`video` (`video_id`, `titol`, `descripcio`, `grandaria`, `
 INSERT INTO `youtube`.`video` (`video_id`, `titol`, `descripcio`, `grandaria`, `nom`, `durada`, `reproduciones`, `likes`, `dislikes`, `estat`, `etiqueta_id`, `publicacio`, `usuari_id`) VALUES (8, 'Tina Turner', 'Anna Mae Bullock (Brownsville, Tennessee; 26 de noviembre de 1939), más conocida como Tina Turner, es una cantante, compositora, bailarina, actriz.', '8K', '8.mp4', '02:55', 678, 67, 1, 'privat', 2, '2023-01-18 09:49:43', 8);
 INSERT INTO `youtube`.`video` (`video_id`, `titol`, `descripcio`, `grandaria`, `nom`, `durada`, `reproduciones`, `likes`, `dislikes`, `estat`, `etiqueta_id`, `publicacio`, `usuari_id`) VALUES (9, 'Swimming in Hawai', 'Hawaii doesn\'t just boast swimming spots right off its sunny shores: a number of baths and pools are spread across the islands.', '4K', '9.mp4', '05:99', 899, 88, 2, 'ocult', 2, '2023-01-18 09:49:43', 9);
 INSERT INTO `youtube`.`video` (`video_id`, `titol`, `descripcio`, `grandaria`, `nom`, `durada`, `reproduciones`, `likes`, `dislikes`, `estat`, `etiqueta_id`, `publicacio`, `usuari_id`) VALUES (10, 'El coche fantastico', 'Knight Rider (conocida como El coche fantástico en España, El auto increíble en México y El auto fantástico en el resto de Hispanoamérica) fue una serie.', '4K', '10.mp4', '09:55', 23456, 98, 3, 'privat', 3, '2023-01-18 09:49:43', 10);
+
+-- create data to etiqueta-video --
+INSERT INTO `youtube`.`etiqueta_video` (`etiqueta_id`, `video_id`) VALUES (1, 1);
+INSERT INTO `youtube`.`etiqueta_video` (`etiqueta_id`, `video_id`) VALUES (2, 2);
+INSERT INTO `youtube`.`etiqueta_video` (`etiqueta_id`, `video_id`) VALUES (3, 3);
+INSERT INTO `youtube`.`etiqueta_video` (`etiqueta_id`, `video_id`) VALUES (4, 4);
+INSERT INTO `youtube`.`etiqueta_video` (`etiqueta_id`, `video_id`) VALUES (5, 5);
