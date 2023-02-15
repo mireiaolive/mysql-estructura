@@ -45,8 +45,14 @@ CREATE TABLE IF NOT EXISTS `optica`.`client` (
   `email` VARCHAR(200) NULL,
   `data_registre` DATETIME NULL,
   `client_recomanat_id` INT NULL,
-  PRIMARY KEY (`client_id`))
-ENGINE = InnoDB;
+  PRIMARY KEY (`client_id`),
+  INDEX `client_recomanat_id_idx` (`client_recomanat_id` ASC),
+  CONSTRAINT `client_recomanat_id`
+    FOREIGN KEY (`client_recomanat_id`)
+    REFERENCES `optica`.`client` (`client_id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
 
 -- create table empleat --
 CREATE TABLE IF NOT EXISTS `optica`.`empleat` (
